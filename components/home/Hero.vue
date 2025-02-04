@@ -1,8 +1,18 @@
 <template>
-  <div class="hero flex flex-col-reverse lg:flex-row items-center justify-between gap-4">
+  <div
+    class="hero flex flex-col-reverse lg:flex-row items-center justify-between gap-4"
+  >
     <div class="flex-grow flex-shrink-0">
-      <h1 id="text-tefan" class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words">&nbsp;</h1>
-      <h1 id="text-haetami" class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words text-primary">
+      <h1
+        id="text-tefan"
+        class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words"
+      >
+        &nbsp;
+      </h1>
+      <h1
+        id="text-haetami"
+        class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words text-primary"
+      >
         &nbsp;
       </h1>
     </div>

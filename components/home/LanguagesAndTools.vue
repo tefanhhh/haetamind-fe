@@ -1,13 +1,13 @@
 <template>
   <div class="language-and-tools bg-white pt-8 pb-4 px-8 rounded-xl">
-    <h1 id="text-ts" class="font-bold text-2xl sm:text-3xl break-words mb-4">&nbsp;</h1>
+    <h1 id="text-ts" class="font-bold text-2xl sm:text-3xl break-words mb-4">
+      &nbsp;
+    </h1>
     <UDivider class="mb-6" />
-    <ul class="columns-3 sm:columns-5 md:columns-6 lg:columns-8 xl:columns-11 gap-4">
-      <li
-        v-for="(item, i) in items"
-        :key="i"
-        class="break-inside-avoid mb-4"
-      >
+    <ul
+      class="columns-3 sm:columns-5 md:columns-6 lg:columns-8 xl:columns-11 gap-4"
+    >
+      <li v-for="(item, i) in items" :key="i" class="break-inside-avoid mb-4">
         <UTooltip :text="item.title">
           <NuxtImg
             :src="item.icon"

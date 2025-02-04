@@ -1,6 +1,8 @@
 <template>
   <div class="summary bg-white p-8 rounded-xl">
-    <h1 id="text-soq" class="font-bold text-2xl sm:text-3xl break-words mb-4">&nbsp;</h1>
+    <h1 id="text-soq" class="font-bold text-2xl sm:text-3xl break-words mb-4">
+      &nbsp;
+    </h1>
     <UDivider class="mb-6" />
     <div class="grid grid-cols-12 gap-6">
       <div
