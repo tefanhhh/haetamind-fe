@@ -6,7 +6,6 @@ import { definePerson } from 'nuxt-schema-org/schema'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Tefan Haetami | Software Engineer',
       htmlAttrs: {
         lang: 'en',
       },
