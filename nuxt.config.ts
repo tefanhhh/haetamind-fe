@@ -70,7 +70,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1738687523/WhatsApp_Image_2025-01-14_at_20.04.25_tknric.jpg",
+          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png",
         },
         {
           property: "og:image:width",
@@ -87,7 +87,7 @@ export default defineNuxtConfig({
         
         {
           name: "twitter:image",
-          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1738687523/WhatsApp_Image_2025-01-14_at_20.04.25_tknric.jpg",
+          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png",
         },
         {
           name: "twitter:image:width",
@@ -150,7 +150,7 @@ export default defineNuxtConfig({
     identity: definePerson({
       name: 'Tefan Haetami',
       givenName: 'Tefan',
-      image: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738687523/WhatsApp_Image_2025-01-14_at_20.04.25_tknric.jpg',
+      image: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
       description: 'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
       jobTitle: 'Software Engineer, Web Developer, Lead Frontend Developer, Backend Developer, Full Stack Developer',
       email: 'tefanhaetami87@gmail.com',
