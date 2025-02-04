@@ -1,8 +1,8 @@
 <template>
   <div class="experience bg-white p-8 rounded-xl">
-    <h1 id="text-expr" class="font-bold text-2xl sm:text-3xl break-words mb-4">
+    <h2 id="text-expr" class="font-bold text-2xl sm:text-3xl break-words mb-4">
       &nbsp;
-    </h1>
+    </h2>
     <UDivider class="mb-6" />
     <div
       v-for="(item, i) in items"
@@ -13,7 +13,7 @@
         class="flex flex-col sm:flex-row items-start justify-between gap-4 mb-2"
       >
         <div>
-          <h2 class="font-semibold text-lg sm:text-xl">{{ item.company }}</h2>
+          <h3 class="font-semibold text-lg sm:text-xl">{{ item.company }}</h3>
           <p class="text-sm sm:text-base">{{ item.position }}</p>
         </div>
         <div>

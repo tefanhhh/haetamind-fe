@@ -178,7 +178,7 @@ export default defineNuxtConfig({
       changefreq: 'weekly'
     }
   },
-  siteConfig: {
+  site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,
     name: 'Tefan Haetami | Software Engineer',
     description: 'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
