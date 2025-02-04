@@ -11,14 +11,25 @@
           </h1>
         </div>
         <div class="flex items-center gap-4">
-          <ULink v-for="(link, i) in links" :key="i" :to="link.url" class="text-xs sm:text-base font-inter font-medium hover:text-primary">
-            {{ link.name }}
-          </ULink>
+          <a v-for="(link, i) in links" :key="i" :href="link.value" target="_blank" class="text-xs sm:text-base font-inter font-medium hover:text-primary">
+            <UIcon :name="link.icon" class="h-4 w-4" />
+          </a>
         </div>
       </div>
     </div>
   </nav>
 </template>
 <script setup lang="ts">
-const links = ref([{ name: 'Work History', url: '/works' }])
+const links = [
+  {
+    label: 'Github',
+    icon: 'i-simple-icons-github',
+    value: 'https://github.com/tefanhhh',
+  },
+  {
+    label: 'LinkedIn',
+    icon: 'i-simple-icons-linkedin',
+    value: 'https://www.linkedin.com/in/tefanhaetami',
+  },
+]
 </script>
