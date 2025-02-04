@@ -1,0 +1,4 @@
+body {
+  background: url('https://res.cloudinary.com/tefanhaetami/image/upload/v1738671034/Desktop_-_2_lyhpj1.png');
+  @apply bg-fixed bg-no-repeat bg-cover;
+}
