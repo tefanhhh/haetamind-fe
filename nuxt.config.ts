@@ -66,42 +66,45 @@ export default defineNuxtConfig({
         {
           key: 'description',
           name: 'description',
-          content: 'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+          content:
+            'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
         },
         {
-          property: "og:image",
-          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png",
+          property: 'og:image',
+          content:
+            'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
         },
         {
-          property: "og:image:width",
-          content: "630"
+          property: 'og:image:width',
+          content: '630',
         },
         {
-          property: "og:image:height",
-          content: "630",
+          property: 'og:image:height',
+          content: '630',
         },
         {
-          property: "og:image:type",
-          content: "image/jpg",
+          property: 'og:image:type',
+          content: 'image/png',
         },
-        
+
         {
-          name: "twitter:image",
-          content: "https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png",
-        },
-        {
-          name: "twitter:image:width",
-          content: "630"
+          name: 'twitter:image',
+          content:
+            'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
         },
         {
-          name: "twitter:image:height",
-          content: "630",
+          name: 'twitter:image:width',
+          content: '630',
         },
         {
-          name: "twitter:image:type",
-          content: "image/jpg",
+          name: 'twitter:image:height',
+          content: '630',
         },
-      ]
+        {
+          name: 'twitter:image:type',
+          content: 'image/png',
+        },
+      ],
     },
     rootTag: 'main',
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -131,7 +134,17 @@ export default defineNuxtConfig({
       }
     },
   },
-  modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxt/image', '@nuxtjs/seo', '@nuxtjs/sitemap', 'nuxt-schema-org', 'nuxt-site-config', 'nuxt-seo-utils', '@nuxtjs/robots'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
+    'nuxt-schema-org',
+    'nuxt-site-config',
+    'nuxt-seo-utils',
+    '@nuxtjs/robots',
+  ],
   nitro: {
     minify: true,
     compressPublicAssets: {
@@ -139,7 +152,7 @@ export default defineNuxtConfig({
     },
   },
   robots: {
-    blockNonSeoBots: true
+    blockNonSeoBots: true,
   },
   runtimeConfig: {
     public: {
@@ -150,9 +163,12 @@ export default defineNuxtConfig({
     identity: definePerson({
       name: 'Tefan Haetami',
       givenName: 'Tefan',
-      image: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
-      description: 'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
-      jobTitle: 'Software Engineer, Web Developer, Lead Frontend Developer, Backend Developer, Full Stack Developer',
+      image:
+        'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
+      description:
+        'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+      jobTitle:
+        'Software Engineer, Web Developer, Lead Frontend Developer, Backend Developer, Full Stack Developer',
       email: 'tefanhaetami87@gmail.com',
       url: process.env.NUXT_PUBLIC_BASE_URL,
       sameAs: [
@@ -161,13 +177,13 @@ export default defineNuxtConfig({
       ],
       worksFor: {
         '@type': 'Organization',
-        'name': 'Elemes Group',
-        'url': 'https://www.elemesgroup.com'
+        name: 'Elemes Group',
+        url: 'https://www.elemesgroup.com',
       },
-    })
+    }),
   },
   seo: {
-    redirectToCanonicalSiteUrl: true
+    redirectToCanonicalSiteUrl: true,
   },
   sitemap: {
     autoLastmod: true,
@@ -175,13 +191,14 @@ export default defineNuxtConfig({
     defaults: {
       lastmod: new Date().toISOString(),
       priority: 1,
-      changefreq: 'weekly'
-    }
+      changefreq: 'weekly',
+    },
   },
   site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,
     name: 'Tefan Haetami | Software Engineer',
-    description: 'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+    description:
+      'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
   },
   ui: {},
   vite: {
