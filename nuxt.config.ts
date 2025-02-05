@@ -104,6 +104,13 @@ export default defineNuxtConfig({
           content: 'image/png',
         },
       ],
+      script: [
+        {
+          hid: 'gtm',
+          src: '/gtm.js',
+          type: 'text/javascript',
+        },
+      ]
     },
     rootTag: 'main',
     pageTransition: { name: 'page', mode: 'out-in' },
