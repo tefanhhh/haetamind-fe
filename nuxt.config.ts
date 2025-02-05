@@ -158,7 +158,14 @@ export default defineNuxtConfig({
     },
   },
   robots: {
-    blockNonSeoBots: true,
+    enabled: true,
+    groups: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
+    ],
+    sitemap: ['/sitemap.xml']
   },
   runtimeConfig: {
     public: {
