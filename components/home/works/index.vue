@@ -1,7 +1,7 @@
 <template>
-  <div class="work-history bg-white p-8 rounded-xl">
+  <div class="project-history bg-white p-8 rounded-xl">
     <h2
-      id="text-work-history"
+      id="text-project-history"
       class="font-bold text-2xl sm:text-3xl break-words mb-4"
     >
       &nbsp;
@@ -296,11 +296,11 @@ function animateText(id: string, value: string) {
 }
 
 onMounted(() => {
-  animateText('work-history', 'Work History')
+  animateText('project-history', 'Project History')
 })
 </script>
 <style lang="css" scoped>
-.work-history {
+.project-history {
   box-shadow: 0px 0px 30px 0px #e9e9e9;
 }
 </style>
