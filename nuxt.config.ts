@@ -142,6 +142,11 @@ export default defineNuxtConfig({
       }
     },
   },
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/tefanhaetami/image/upload/',
+    }
+  },
   modules: [
     '@nuxt/ui',
     '@nuxt/eslint',
