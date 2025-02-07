@@ -16,19 +16,12 @@
         &nbsp;
       </h1>
     </div>
-    <div class="flex-grow-0 flex-shrink-0 lg:-mr-14">
+    <div class="flex-grow-0 flex-shrink-0 lg:-mr-14 hidden lg:block">
       <ClientOnly>
         <Vue3Lottie
           animation-link="https://res.cloudinary.com/tefanhaetami/raw/upload/v1738660666/lottie-circle_y1g3ud.json"
           :height="500"
           :width="500"
-          class="hidden sm:block"
-        />
-        <Vue3Lottie
-          animation-link="https://res.cloudinary.com/tefanhaetami/raw/upload/v1738660666/lottie-circle_y1g3ud.json"
-          :height="350"
-          :width="350"
-          class="block sm:hidden"
         />
       </ClientOnly>
     </div>
