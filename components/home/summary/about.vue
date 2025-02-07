@@ -1,6 +1,6 @@
 <template>
-  <div class="summary bg-white p-8 rounded-xl">
-    <h2 id="text-soq" class="font-bold text-2xl sm:text-3xl break-words mb-4">
+  <div class="about bg-white p-8 rounded-xl">
+    <h2 id="text-about" class="font-bold text-2xl sm:text-3xl break-words mb-4">
       &nbsp;
     </h2>
     <UDivider class="mb-6" />
@@ -57,11 +57,11 @@ function animateText(id: string, value: string) {
 }
 
 onMounted(() => {
-  animateText('soq', 'Summary')
+  animateText('about', 'Summary')
 })
 </script>
 <style lang="css" scoped>
-.summary {
+.about {
   box-shadow: 0px 0px 30px 0px #e9e9e9;
 }
 </style>
