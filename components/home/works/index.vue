@@ -29,6 +29,9 @@
               :label="item2"
               color="red"
               variant="subtle"
+              :ui="{
+                rounded: 'rounded-full'
+              }"
             />
           </div>
           <p class="mb-2">{{ item.description }}</p>
