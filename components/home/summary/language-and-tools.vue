@@ -156,7 +156,7 @@ function animateText(id: string, value: string) {
 }
 
 onMounted(() => {
-  animateText('ts', 'Languages and Tools')
+  animateText('ts', 'Language and Tools')
 })
 </script>
 <style lang="css" scoped>
