@@ -9,7 +9,11 @@
     <UDivider class="mb-6" />
     <div>
       <p>
-        I have been coding for over {{ years }}+ years, working on projects of all sizes, from small-scale applications to large-scale systems. I have experience in building web applications and APIs, using a variety of technologies such as JavaScript, TypeScript, Node.js, Angular, Vue, and more. Here are some of my current and past works:
+        I have been coding for over {{ years }}+ years, working on projects of
+        all sizes, from small-scale applications to large-scale systems. I have
+        experience in building web applications and APIs, using a variety of
+        technologies such as JavaScript, TypeScript, Node.js, Angular, Vue, and
+        more. Here are some of my current and past works:
       </p>
       <div class="mb-6"></div>
       <ul>
@@ -28,21 +32,23 @@
               :ui="{
                 rounded: 'rounded-full',
                 size: {
-                  sm: 'px-3'
-                }
+                  sm: 'px-3',
+                },
               }"
             />
           </div>
           <p class="mb-2">
-            {{ item.description }}</p>
-          
+            {{ item.description }}
+          </p>
+
           <div v-if="item.url" class="mb-2">
             <a
-                :href="item.url"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-500 hover:underline text-sm font-normal"
-            >{{ item.url }}</a>
+              :href="item.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-500 hover:underline text-sm font-normal"
+              >{{ item.url }}</a
+            >
           </div>
 
           <h4 class="font-semibold text-sm mb-1">Tools:</h4>
@@ -184,37 +190,22 @@ const items = [
     platform: ['API'],
     description: `API Teramedik Morula IVF Indonesia is an API for Teramedik Morula IVF Indonesia, a company that focuses on providing health and beauty products. The API is used to manage the company's IVF Indonesia data.`,
     role: 'Backend Developer',
-    tech: [
-      'NodeJS',
-      'NestJS',
-      'TypeScript'
-    ],
+    tech: ['NodeJS', 'NestJS', 'TypeScript'],
   },
   {
     title: 'Morula IVF Monitoring',
     platform: ['Dashboard'],
     description: `Morula IVF Monitoring is a platform for Morula Indonesia, a company that focuses on providing health and beauty products. The platform is used to monitor the company's IVF Indonesia data.`,
     role: 'Frontend Developer',
-    tech: [
-      'NodeJS',
-      'Angular',
-      'Angular Material',
-      'RxJS',
-      'TypeScript',
-    ],
+    tech: ['NodeJS', 'Angular', 'Angular Material', 'RxJS', 'TypeScript'],
   },
   {
     title: 'Morula Push Virtual Account',
     platform: ['Dashboard'],
-    description: 'Morula Push Virtual Account is a platform for Morula Indonesia, a company that focuses on providing health and beauty products.',
+    description:
+      'Morula Push Virtual Account is a platform for Morula Indonesia, a company that focuses on providing health and beauty products.',
     role: 'Fullstack Developer',
-    tech: [
-      'TypeScript',
-      'NodeJS',
-      'Nuxt',
-      'Tailwind CSS',
-      'NestJS',
-    ],
+    tech: ['TypeScript', 'NodeJS', 'Nuxt', 'Tailwind CSS', 'NestJS'],
   },
   {
     title: 'Fenita Core Fleet',

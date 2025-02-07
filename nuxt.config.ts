@@ -71,8 +71,7 @@ export default defineNuxtConfig({
         {
           key: 'og:image',
           property: 'og:image',
-          content:
-            '/images/Tefan_Logo_wt2qve.png',
+          content: '/images/Tefan_Logo_wt2qve.png',
         },
         {
           key: 'og:image:width',
@@ -93,8 +92,7 @@ export default defineNuxtConfig({
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content:
-            '/images/Tefan_Logo_wt2qve.png',
+          content: '/images/Tefan_Logo_wt2qve.png',
         },
         {
           key: 'twitter:image:width',
@@ -119,8 +117,9 @@ export default defineNuxtConfig({
         {
           key: 'keywords',
           name: 'keywords',
-          content: 'Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer, JavaScript, TypeScript, Git, GitHub, Docker, Cypress, Vue, Nuxt, Angular, NestJS, Rust',
-        }
+          content:
+            'Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer, JavaScript, TypeScript, Git, GitHub, Docker, Cypress, Vue, Nuxt, Angular, NestJS, Rust',
+        },
       ],
       script: [
         {
@@ -194,8 +193,7 @@ export default defineNuxtConfig({
     identity: definePerson({
       name: 'Tefan Haetami',
       givenName: 'Tefan',
-      image:
-        '/images/Tefan_Logo_wt2qve.png',
+      image: '/images/Tefan_Logo_wt2qve.png',
       description:
         'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
       jobTitle:
