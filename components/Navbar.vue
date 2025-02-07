@@ -14,6 +14,7 @@
             :key="i"
             :href="link.value"
             target="_blank"
+            :aria-label="link.desc"
             class="text-xs sm:text-base font-inter font-medium hover:text-primary"
           >
             <UIcon :name="link.icon" class="h-4 w-4" />
@@ -29,11 +30,13 @@ const links = [
     label: 'Github',
     icon: 'i-simple-icons-github',
     value: 'https://github.com/tefanhhh',
+    desc: 'Explore my projects and contributions on GitHub.',
   },
   {
     label: 'LinkedIn',
     icon: 'i-simple-icons-linkedin',
     value: 'https://www.linkedin.com/in/tefanhaetami',
+    desc: 'Connect with me on LinkedIn for professional insights and networking.',
   },
 ]
 </script>
