@@ -4,9 +4,7 @@
       &nbsp;
     </h2>
     <UDivider class="mb-6" />
-    <ul
-      class=" flex flex-wrap justify-between items-center gap-4"
-    >
+    <ul class="flex flex-wrap justify-between items-center gap-4">
       <li v-for="(item, i) in items" :key="i">
         <UTooltip :text="item.title">
           <NuxtImg
