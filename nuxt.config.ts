@@ -112,7 +112,7 @@ export default defineNuxtConfig({
           src: '/gtm.js',
           type: 'text/javascript',
         },
-      ]
+      ],
     },
     rootTag: 'main',
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -167,7 +167,7 @@ export default defineNuxtConfig({
         allow: '/',
       },
     ],
-    sitemap: ['/sitemap.xml']
+    sitemap: ['/sitemap.xml'],
   },
   runtimeConfig: {
     public: {
