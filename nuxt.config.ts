@@ -2,7 +2,6 @@
 import viteCompression from 'vite-plugin-compression'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { definePerson } from 'nuxt-schema-org/schema'
-import { PRELOAD } from './data/nuxt-config'
 
 export default defineNuxtConfig({
   app: {
@@ -61,7 +60,6 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap',
         },
-        ...PRELOAD,
       ],
       meta: [
         {
@@ -74,7 +72,7 @@ export default defineNuxtConfig({
           key: 'og:image',
           property: 'og:image',
           content:
-            'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
+            '/images/Tefan_Logo_wt2qve.png',
         },
         {
           key: 'og:image:width',
@@ -96,7 +94,7 @@ export default defineNuxtConfig({
           key: 'twitter:image',
           name: 'twitter:image',
           content:
-            'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
+            '/images/Tefan_Logo_wt2qve.png',
         },
         {
           key: 'twitter:image:width',
@@ -160,11 +158,6 @@ export default defineNuxtConfig({
       }
     },
   },
-  image: {
-    cloudinary: {
-      baseURL: 'https://res.cloudinary.com/tefanhaetami/image/upload/',
-    },
-  },
   modules: [
     '@nuxt/ui',
     '@nuxt/eslint',
@@ -202,7 +195,7 @@ export default defineNuxtConfig({
       name: 'Tefan Haetami',
       givenName: 'Tefan',
       image:
-        'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
+        '/images/Tefan_Logo_wt2qve.png',
       description:
         'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
       jobTitle:

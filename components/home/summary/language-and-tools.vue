@@ -29,103 +29,103 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const items = [
   {
     title: 'Javascript (ES6+)',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679461/js_5968292_tzqcwd.png',
+    icon: '/images/js_5968292_tzqcwd.png',
   },
   {
     title: 'Typescript',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679634/typescript_5968381_zcva7v.png',
+    icon: '/images/typescript_5968381_zcva7v.png',
   },
   {
     title: 'Git',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679456/git_rzhjdk.png',
+    icon: '/images/git_rzhjdk.png',
   },
   {
     title: 'Github',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679896/icons8-github_c8fj56.svg',
+    icon: '/images/icons8-github_c8fj56.svg',
   },
   {
     title: 'Docker',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679455/docker_kmb6dh.svg',
+    icon: '/images/docker_kmb6dh.svg',
   },
   {
     title: 'Cypress',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679455/cypress_xtnwsi.svg',
+    icon: '/images/cypress_xtnwsi.svg',
   },
   {
     title: 'Postman',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679454/postman_1_ke4rz7.svg',
+    icon: '/images/postman_1_ke4rz7.svg',
   },
   {
     title: 'Swagger',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679454/swagger_b3w1x0.svg',
+    icon: '/images/swagger_b3w1x0.svg',
   },
   {
     title: 'NodeJS',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738681349/icons8-nodejs_jte4s2.svg',
+    icon: '/images/icons8-nodejs_jte4s2.svg',
   },
   {
     title: 'Vue',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679732/icons8-vue-js_yuwcdy.svg',
+    icon: '/images/icons8-vue-js_yuwcdy.svg',
   },
   {
     title: 'Vite',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679460/vite_o6adud.svg',
+    icon: '/images/vite_o6adud.svg',
   },
   {
     title: 'Nuxt',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679461/nuxt_sngsvu.svg',
+    icon: '/images/nuxt_sngsvu.svg',
   },
   {
     title: 'Angular',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679545/angular_qi3b0d.png',
+    icon: '/images/angular_qi3b0d.png',
   },
   {
     title: 'ExpressJS',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679459/icons8-express-js_dpyyrb.svg',
+    icon: '/images/icons8-express-js_dpyyrb.svg',
   },
   {
     title: 'NestJS',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679459/nestjs_u5o72f.svg',
+    icon: '/images/nestjs_u5o72f.svg',
   },
   {
     title: 'GraphQL',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679458/graphql_f6jsur.svg',
+    icon: '/images/graphql_f6jsur.svg',
   },
   {
     title: 'Apollo GraphQL',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679457/apollo_ldbprn.svg',
+    icon: '/images/apollo_ldbprn.svg',
   },
   {
     title: 'MongoDB',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679456/mogodb_yslwlp.svg',
+    icon: '/images/mogodb_yslwlp.svg',
   },
   {
     title: 'PostgreSQL',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679457/postgresql_nd87qp.png',
+    icon: '/images/postgresql_nd87qp.png',
   },
   {
     title: 'Redis',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679842/icons8-redis_s6pwbq.svg',
+    icon: '/images/icons8-redis_s6pwbq.svg',
   },
   {
     title: 'SASS',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679454/sass_oqnre9.svg',
+    icon: '/images/sass_oqnre9.svg',
   },
   {
     title: 'Tailwind CSS',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738681473/icons8-tailwind-css_z5uszi.svg',
+    icon: '/images/icons8-tailwind-css_z5uszi.svg',
   },
   {
     title: 'Vuetify',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738679454/vuetify_yet6fc.svg',
+    icon: '/images/vuetify_yet6fc.svg',
   },
   {
     title: 'Nuxt UI',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738681731/icons8-nuxt-js_w7exc0.svg',
+    icon: '/images/icons8-nuxt-js_w7exc0.svg',
   },
   {
     title: 'Angular Material',
-    icon: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1738681627/icons8-angular_dg6ue0.svg',
+    icon: '/images/icons8-angular_dg6ue0.svg',
   },
 ]
 

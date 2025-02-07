@@ -19,7 +19,7 @@
     <div class="flex-grow-0 flex-shrink-0 lg:-mr-14 hidden lg:block">
       <ClientOnly>
         <Vue3Lottie
-          animation-link="https://res.cloudinary.com/tefanhaetami/raw/upload/v1738660666/lottie-circle_y1g3ud.json"
+          animation-link="/images/lottie-circle_y1g3ud.json"
           :height="500"
           :width="500"
         />
