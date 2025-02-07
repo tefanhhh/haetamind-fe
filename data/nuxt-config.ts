@@ -3,13 +3,6 @@ export const PRELOAD: any = [
     rel: 'preload',
     fetchpriority: 'high',
     as: 'image',
-    href: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1732575649/Tefan_Logo_zqmroe.png',
-    type: 'image/png',
-  },
-  {
-    rel: 'preload',
-    fetchpriority: 'high',
-    as: 'image',
     href: 'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
     type: 'image/png',
   },
