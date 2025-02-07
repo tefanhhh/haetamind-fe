@@ -10,9 +10,11 @@
       <li v-for="(item, i) in items" :key="i" class="break-inside-avoid mb-4">
         <UTooltip :text="item.title">
           <NuxtImg
+            format="webp"
             :src="item.icon"
             :alt="item.title"
             width="100"
+            loading="lazy"
             class="cursor-pointer"
           />
         </UTooltip>
