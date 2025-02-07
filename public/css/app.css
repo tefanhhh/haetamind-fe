@@ -1,0 +1,4 @@
+body {
+  background: url('/images/Desktop_-_2_lyhpj1.webp');
+  @apply bg-fixed bg-no-repeat bg-cover;
+}

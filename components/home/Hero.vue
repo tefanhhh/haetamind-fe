@@ -1,34 +1,54 @@
 <template>
-  <div
-    class="hero flex flex-col-reverse lg:flex-row items-center justify-between gap-4"
-  >
-    <div class="flex-grow flex-shrink-0">
+  <div class="hero flex flex-row items-center justify-between gap-4">
+    <div class="flex-shrink-0">
       <h1
         id="text-tefan"
-        class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words"
+        class="text-left font-bold text-4xl sm:text-6xl md:text-8xl break-words"
       >
         &nbsp;
       </h1>
       <h1
         id="text-haetami"
-        class="text-center lg:text-left font-bold text-5xl sm:text-8xl break-words text-primary"
+        class="text-left font-bold text-4xl sm:text-6xl md:text-8xl break-words text-primary"
       >
         &nbsp;
       </h1>
     </div>
-    <div class="flex-grow-0 flex-shrink-0 lg:-mr-14 hidden lg:block">
-      <ClientOnly>
-        <Vue3Lottie
-          animation-link="/images/lottie-circle_y1g3ud.json"
-          :height="500"
-          :width="500"
-        />
-      </ClientOnly>
+    <div class="flex-shrink-0">
+      <div
+        class="circle opacity-0 h-24 sm:h-60 lg:h-80 w-24 sm:w-60 lg:w-80 rounded-full bg-black relative overflow-hidden"
+      >
+        <div
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[54px] sm:h-[124px] lg:w-[164px] w-[54px] sm:w-[124px] lg:h-[164px]"
+        >
+          <NuxtImg
+            format="webp"
+            src="/images/Tefan_Logo_Soft_hcve2e.png"
+            alt="Haetamind Logo Soft"
+            loading="lazy"
+            width="164"
+            height="164"
+            class="animate-spin-slow-md"
+          />
+        </div>
+        <div
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[96px] sm:h-[242px] lg:w-[324px] w-[96px] sm:w-[242px] lg:h-[324px]"
+        >
+          <NuxtImg
+            format="webp"
+            src="/images/tefan-logo-frame.png"
+            alt="Haetamind Frame"
+            loading="lazy"
+            width="324"
+            height="324"
+            class="animate-spin-slow"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-import { Vue3Lottie } from 'vue3-lottie'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -62,10 +82,25 @@ function animateText(value: string) {
   })
 }
 
+function animateCircle() {
+  gsap.to('.circle', {
+    opacity: 1,
+    duration: 1,
+    delay: 0.8,
+    ease: 'power2.out', // Smooth easing
+  })
+}
+
 onMounted(() => {
   animateText('tefan')
   setTimeout(() => {
     animateText('haetami')
+    animateCircle()
   }, 800)
 })
 </script>
+<style lang="css" scoped>
+.circle {
+  box-shadow: 0px 0px 30px -8px #f59e0b;
+}
+</style>

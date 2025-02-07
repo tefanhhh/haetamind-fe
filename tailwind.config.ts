@@ -2,7 +2,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
+        'spin-slow': 'spin 32s linear infinite',
+        'spin-slow-md': 'spin 64s linear infinite',
       },
       fontFamily: {
         sans: [
@@ -30,11 +31,11 @@ module.exports = {
     },
     container: {
       screens: {
-        sm: '640px',
-        md: '768px',
-        lg: '768px',
-        xl: '768px',
-        '2xl': '1024px',
+        sm: '604px',
+        md: '736px',
+        lg: '736px',
+        xl: '736px',
+        '2xl': '992px',
       },
     },
   },
