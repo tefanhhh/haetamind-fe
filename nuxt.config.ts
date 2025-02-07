@@ -71,40 +71,58 @@ export default defineNuxtConfig({
             'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
         },
         {
+          key: 'og:image',
           property: 'og:image',
           content:
             'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
         },
         {
+          key: 'og:image:width',
           property: 'og:image:width',
           content: '630',
         },
         {
+          key: 'og:image:height',
           property: 'og:image:height',
           content: '630',
         },
         {
+          key: 'og:image:type',
           property: 'og:image:type',
           content: 'image/png',
         },
 
         {
+          key: 'twitter:image',
           name: 'twitter:image',
           content:
             'https://res.cloudinary.com/tefanhaetami/image/upload/v1733543111/Tefan_Logo_wt2qve.png',
         },
         {
+          key: 'twitter:image:width',
           name: 'twitter:image:width',
           content: '630',
         },
         {
+          key: 'twitter:image:height',
           name: 'twitter:image:height',
           content: '630',
         },
         {
+          key: 'twitter:image:type',
           name: 'twitter:image:type',
           content: 'image/png',
         },
+        {
+          key: 'publisher',
+          name: 'publisher',
+          content: 'Tefan Haetami',
+        },
+        {
+          key: 'keywords',
+          name: 'keywords',
+          content: 'Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer, JavaScript, TypeScript, Git, GitHub, Docker, Cypress, Vue, Nuxt, Angular, NestJS, Rust',
+        }
       ],
       script: [
         {
@@ -216,7 +234,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,
-    name: 'Tefan Haetami | Software Engineer',
+    name: 'Tefan Haetami | Software Engineer | NodeJS | TypeScript',
     description:
       'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
   },
