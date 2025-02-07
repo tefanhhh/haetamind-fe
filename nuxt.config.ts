@@ -126,6 +126,8 @@ export default defineNuxtConfig({
           hid: 'gtm',
           src: '/gtm.js',
           type: 'text/javascript',
+          async: true,
+          defer: true,
         },
       ],
     },

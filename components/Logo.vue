@@ -5,6 +5,7 @@
       :src="src[props.variant]"
       loading="lazy"
       :width="props.width"
+      :height="props.width"
       alt="Application Logo"
     />
   </NuxtLink>
