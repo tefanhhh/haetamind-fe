@@ -1,7 +1,7 @@
 <template>
   <div>
-    <HomeWorksConsultingHistory />
+    <WorksConsultingHistory />
     <div class="mb-8"></div>
-    <HomeWorksProjectHistory />
+    <WorksProjectHistory />
   </div>
 </template>

@@ -4,18 +4,10 @@
       &nbsp;
     </h2>
     <UDivider class="mb-6" />
-    <ul class="flex flex-wrap justify-between items-center gap-4">
+    <ul class="flex flex-wrap justify-center items-center gap-4">
       <li v-for="(item, i) in items" :key="i">
         <UTooltip :text="item.title">
-          <NuxtImg
-            format="webp"
-            :src="item.icon"
-            :alt="item.title"
-            width="100"
-            :height="item.height"
-            loading="lazy"
-            class="cursor-pointer"
-          />
+          <UIcon :name="item.icon" class="h-24 w-24" :class="[item.color]" />
         </UTooltip>
       </li>
     </ul>
@@ -28,128 +20,113 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const items = [
   {
     title: 'Javascript (ES6+)',
-    icon: '/images/js_5968292_tzqcwd.png',
-    height: 100,
+    icon: 'i-simple-icons-javascript',
+    color: 'text-yellow-400',
   },
   {
     title: 'Typescript',
-    icon: '/images/typescript_5968381_zcva7v.png',
-    height: 100,
+    icon: 'i-simple-icons-typescript',
+    color: 'text-blue-500',
   },
   {
     title: 'Git',
-    icon: '/images/git_rzhjdk.png',
-    height: 42,
+    icon: 'i-simple-icons-git',
+    color: 'text-red-500',
   },
   {
     title: 'Github',
-    icon: '/images/icons8-github_c8fj56.svg',
-    height: 100,
+    icon: 'i-simple-icons-github',
+    color: 'text-black',
   },
   {
     title: 'Docker',
-    icon: '/images/docker_kmb6dh.svg',
-    height: 23,
+    icon: 'i-simple-icons-docker',
+    color: 'text-blue-400',
   },
   {
     title: 'Cypress',
-    icon: '/images/cypress_xtnwsi.svg',
-    height: 40,
+    icon: 'i-simple-icons-cypress',
+    color: 'text-slate-500',
   },
   {
     title: 'Postman',
-    icon: '/images/postman_1_ke4rz7.svg',
-    height: 103,
+    icon: 'i-simple-icons-postman',
+    color: 'text-orange-500',
   },
   {
     title: 'Swagger',
-    icon: '/images/swagger_b3w1x0.svg',
-    height: 100,
+    icon: 'i-simple-icons-swagger',
+    color: 'text-green-700',
   },
   {
     title: 'NodeJS',
-    icon: '/images/icons8-nodejs_jte4s2.svg',
-    height: 100,
+    icon: 'i-simple-icons-nodedotjs',
+    color: 'text-green-600',
   },
   {
     title: 'Vue',
-    icon: '/images/icons8-vue-js_yuwcdy.svg',
-    height: 100,
+    icon: 'i-simple-icons-vuedotjs',
+    color: 'text-green-400',
   },
   {
     title: 'Vite',
-    icon: '/images/vite_o6adud.svg',
-    height: 98.5,
+    icon: 'i-simple-icons-vite',
+    color: 'text-fuchsia-500',
   },
   {
     title: 'Nuxt',
-    icon: '/images/nuxt_sngsvu.svg',
-    height: 25,
+    icon: 'i-simple-icons-nuxt',
+    color: 'text-green-500',
   },
   {
     title: 'Angular',
-    icon: '/images/angular_qi3b0d.png',
-    height: 31.5,
+    icon: 'i-simple-icons-angular',
+    color: 'text-red-500',
   },
   {
     title: 'ExpressJS',
-    icon: '/images/icons8-express-js_dpyyrb.svg',
-    height: 100,
+    icon: 'i-simple-icons-express',
+    color: 'text-slate-500',
   },
   {
     title: 'NestJS',
-    icon: '/images/nestjs_u5o72f.svg',
-    height: 96.5,
+    icon: 'i-simple-icons-nestjs',
+    color: 'text-red-500',
   },
   {
     title: 'GraphQL',
-    icon: '/images/graphql_f6jsur.svg',
-    height: 100,
+    icon: 'i-simple-icons-graphql',
+    color: 'text-pink-500',
   },
   {
     title: 'Apollo GraphQL',
-    icon: '/images/apollo_ldbprn.svg',
-    height: 100,
+    icon: 'i-simple-icons-apollographql',
+    color: 'text-rose-300',
   },
   {
     title: 'MongoDB',
-    icon: '/images/mogodb_yslwlp.svg',
-    height: 25,
+    icon: 'i-simple-icons-mongodb',
+    color: 'text-green-400',
   },
   {
     title: 'PostgreSQL',
-    icon: '/images/postgresql_nd87qp.png',
-    height: 103,
+    icon: 'i-simple-icons-postgresql',
+    color: 'text-blue-500',
   },
   {
     title: 'Redis',
-    icon: '/images/icons8-redis_s6pwbq.svg',
-    height: 100,
+    icon: 'i-simple-icons-redis',
+    color: 'text-red-400',
   },
   {
     title: 'SASS',
-    icon: '/images/sass_oqnre9.svg',
-    height: 75,
+    icon: 'i-simple-icons-sass',
+    color: 'text-pink-400',
   },
   {
     title: 'Tailwind CSS',
-    icon: '/images/icons8-tailwind-css_z5uszi.svg',
-    height: 100,
-  },
-  {
-    title: 'Vuetify',
-    icon: '/images/vuetify_yet6fc.svg',
-    height: 101,
-  },
-  {
-    title: 'Nuxt UI',
-    icon: '/images/icons8-nuxt-js_w7exc0.svg',
-    height: 100,
-  },
-  {
-    title: 'Angular Material',
-    icon: '/images/icons8-angular_dg6ue0.svg',
-    height: 100,
+    icon: 'i-simple-icons-tailwindcss',
+    color: 'text-blue-400',
   },
 ]
 
