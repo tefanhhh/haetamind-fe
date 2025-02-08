@@ -19,12 +19,14 @@
     "@nuxtjs/robots": "^5.2.2",
     "@nuxtjs/seo": "^2.1.1",
     "@nuxtjs/sitemap": "^7.2.4",
+    "@pinia/nuxt": "0.9.0",
     "dayjs": "^1.11.13",
     "gsap": "^3.12.7",
     "nuxt": "^3.15.4",
     "nuxt-schema-org": "^4.1.1",
     "nuxt-seo-utils": "^6.0.8",
     "nuxt-site-config": "^3.0.6",
+    "pinia": "^2.3.1",
     "vue": "latest",
     "vue-router": "latest"
   },
@@ -41,5 +43,8 @@
     "typescript-eslint": "^8.23.0",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-image-optimizer": "^1.1.8"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }

@@ -4,7 +4,7 @@
     <div class="container mx-auto px-4 sm:px-0">
       <Hero />
       <div class="mb-8"></div>
-      <div class="max-w-[512px] mx-auto sticky left-0 top-24 z-10">
+      <div class="max-w-[512px] mx-auto">
         <UTabs
           v-model="tab.value"
           :items="tab.items"
@@ -37,8 +37,12 @@
   </div>
 </template>
 <script setup lang="ts">
+const indexStore = useIndexStore()
+const { setPageTransitionName } = indexStore
+
 const tab = reactive({
   value: 0,
+  prevValue: 0,
   items: [
     {
       label: 'Summary',
@@ -59,9 +63,15 @@ const router = useRouter()
 const path = router.currentRoute.value.path
 
 const onTabChange = useDebounce((val: number) => {
+  if (val > tab.prevValue) {
+    setPageTransitionName('slide-left')
+  } else {
+    setPageTransitionName('slide-right')
+  }
   router.replace({
     path: tab.items[val].value,
   })
+  tab.prevValue = val
 }, 300)
 
 if (path) {

@@ -140,7 +140,6 @@ export default defineNuxtConfig({
       ],
     },
     rootTag: 'main',
-    pageTransition: { name: 'page', mode: 'out-in' },
   },
   compatibilityDate: '2024-11-01',
   colorMode: {
@@ -177,12 +176,16 @@ export default defineNuxtConfig({
     'nuxt-seo-utils',
     '@nuxtjs/robots',
     'nuxt-lodash',
+    '@pinia/nuxt',
   ],
   nitro: {
     minify: true,
     compressPublicAssets: {
       brotli: true,
     },
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
   },
   robots: {
     enabled: true,
