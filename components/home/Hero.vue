@@ -1,5 +1,5 @@
 <template>
-  <div class="hero flex flex-row items-center justify-between gap-4">
+  <div class="hero flex flex-row items-center justify-between gap-4 sm:py-12">
     <div class="flex-shrink-0">
       <h1
         id="text-tefan"
