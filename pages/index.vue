@@ -24,6 +24,7 @@
             },
           },
         }"
+        @change="onTabChange"
       />
     </div>
     <div class="mb-8"></div>
@@ -44,6 +45,28 @@ const tab = reactive({
       label: 'Works',
       value: 'works',
     },
+    {
+      label: 'Tools',
+      value: 'tools',
+    },
   ],
 })
+
+const router = useRouter()
+const query = router.currentRoute.value.query
+
+const onTabChange = useDebounce((val: number) => {
+  router.replace({
+    query: {
+      tab: tab.items[val].value,
+    },
+  })
+}, 300)
+
+if (query.tab) {
+  const index = tab.items.findIndex((item) => item.value === query.tab)
+  if (index !== -1) {
+    tab.value = index
+  }
+}
 </script>

@@ -176,6 +176,7 @@ export default defineNuxtConfig({
     'nuxt-site-config',
     'nuxt-seo-utils',
     '@nuxtjs/robots',
+    'nuxt-lodash',
   ],
   nitro: {
     minify: true,
