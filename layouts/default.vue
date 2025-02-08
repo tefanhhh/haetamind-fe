@@ -78,6 +78,7 @@ if (path) {
   const index = tab.items.findIndex((item) => item.value === path)
   if (index !== -1) {
     tab.value = index
+    tab.prevValue = index
   }
 }
 </script>
