@@ -274,6 +274,17 @@ export default defineNuxtConfig({
       priority: 1,
       changefreq: 'weekly',
     },
+    sitemaps: {
+      general: {
+        includeAppSources: true,
+        include: ['/', '/works', '/tools'],
+        defaults: { priority: 1 },
+      },
+      tools: {
+        include: ['/tools/**'],
+        defaults: { priority: 1 },
+      },
+    },
   },
   site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,

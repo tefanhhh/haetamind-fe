@@ -34,6 +34,15 @@
 import { z } from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 
+const { generateSeo } = useSeo()
+
+useSeoMeta(
+  generateSeo(
+    'Bcrypt Hasher Generator - Tefan Haetami | Software Engineer | Node.js, TypeScript & More',
+    'A powerful hasher tool for generating and verifying bcrypt hashes algorithm. Securely encrypt passwords and match hashes with ease.',
+  ),
+)
+
 definePageMeta({
   layout: 'hasher',
 })
