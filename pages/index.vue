@@ -2,12 +2,12 @@
   <HomeSummary />
 </template>
 <script lang="ts" setup>
-useSeoMeta({
-  title: 'Tefan Haetami | Software Engineer | NodeJS | TypeScript',
-  description:
-    'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
-  ogTitle: 'Tefan Haetami | Software Engineer | NodeJS | TypeScript',
-  ogDescription:
-    'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
-})
+const { generateSeo } = useSeo()
+
+useSeoMeta(
+  generateSeo(
+    'Tefan Haetami | Software Engineer | Expert in Node.js, TypeScript & Full-Stack Development',
+    'Experienced Software Engineer and Web Developer specializing in Node.js, TypeScript, and full-stack development. Passionate about building fast, accessible, and high-performance digital experiences. Helping businesses create scalable and user-friendly web applications.',
+  ),
+)
 </script>

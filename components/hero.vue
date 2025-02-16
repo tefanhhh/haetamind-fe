@@ -1,18 +1,18 @@
 <template>
   <div class="hero flex flex-row items-center justify-between gap-4 sm:py-12">
     <div class="flex-shrink-0">
-      <h1
+      <h2
         id="text-tefan"
         class="text-left font-bold text-4xl sm:text-6xl md:text-8xl break-words"
       >
         &nbsp;
-      </h1>
-      <h1
+      </h2>
+      <h2
         id="text-haetami"
         class="text-left font-bold text-4xl sm:text-6xl md:text-8xl break-words text-primary"
       >
         &nbsp;
-      </h1>
+      </h2>
     </div>
     <div class="flex-shrink-0">
       <div

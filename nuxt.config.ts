@@ -74,7 +74,7 @@ export default defineNuxtConfig({
           key: 'description',
           name: 'description',
           content:
-            'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+            'Experienced Software Engineer and Web Developer specializing in JavaScript, TypeScript, Vue, Nuxt, NestJS, and full-stack development. Passionate about building fast, accessible, and scalable digital experiences.',
         },
         {
           key: 'og:image',
@@ -126,7 +126,7 @@ export default defineNuxtConfig({
           key: 'keywords',
           name: 'keywords',
           content:
-            'Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer, JavaScript, TypeScript, Git, GitHub, Docker, Cypress, Vue, Nuxt, Angular, NestJS, Rust',
+            'Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Developer, JavaScript Developer, TypeScript Developer, Node.js, Vue.js, Nuxt.js, Angular, NestJS, Rust Developer, Git, GitHub, Docker, Cypress, Web Development, API Development, Scalable Applications, Cloud Computing, DevOps',
         },
       ],
       script: [
@@ -229,9 +229,27 @@ export default defineNuxtConfig({
       givenName: 'Tefan',
       image: '/images/Tefan_Logo_wt2qve.png',
       description:
-        'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+        'Experienced Software Engineer and Web Developer specializing in JavaScript, TypeScript, Vue, Nuxt, NestJS, and full-stack development. Passionate about building fast, accessible, and scalable digital experiences.',
       jobTitle:
         'Software Engineer, Web Developer, Lead Frontend Developer, Backend Developer, Full Stack Developer',
+      knowsAbout: [
+        'JavaScript',
+        'TypeScript',
+        'Vue.js',
+        'Nuxt.js',
+        'Angular',
+        'React',
+        'NestJS',
+        'Node.js',
+        'GraphQL',
+        'MongoDB',
+        'PostgreSQL',
+        'SQL',
+        'Docker',
+        'CI/CD',
+        'REST API',
+        'Cloud Computing',
+      ],
       email: 'tefanhaetami87@gmail.com',
       url: process.env.NUXT_PUBLIC_BASE_URL,
       sameAs: [
@@ -259,9 +277,9 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.NUXT_PUBLIC_BASE_URL,
-    name: 'Tefan Haetami | Software Engineer | NodeJS | TypeScript',
+    name: 'haetamind.com',
     description:
-      'Software Engineer and Web Developer with a passion for building digital experiences that are accessible, performant, and inclusive.',
+      'Experienced Software Engineer and Web Developer specializing in JavaScript, TypeScript, Vue, Nuxt, NestJS, and full-stack development. Passionate about building fast, accessible, and scalable digital experiences.',
   },
   ui: {},
   vite: {

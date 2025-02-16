@@ -4,12 +4,12 @@
   </div>
 </template>
 <script lang="ts" setup>
-useSeoMeta({
-  title: 'My Tools - Tefan Haetami | Software Engineer | NodeJS | TypeScript',
-  description:
-    'This is all of my tools that I use for my daily work. I made it on purpose to help me in my work',
-  ogTitle: 'My Tools - Tefan Haetami | Software Engineer | NodeJS | TypeScript',
-  ogDescription:
-    'This is all of my tools that I use for my daily work. I made it on purpose to help me in my work',
-})
+const { generateSeo } = useSeo()
+
+useSeoMeta(
+  generateSeo(
+    'My Tech Stack - Tefan Haetami | Software Engineer | Node.js, TypeScript & More',
+    'Explore the essential tools and technologies I use daily for software development. From coding and debugging to deployment and collaboration, this curated tech stack enhances my workflow and productivity as a Software Engineer specializing in Node.js, TypeScript, and modern web development.',
+  ),
+)
 </script>
