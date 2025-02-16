@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <div class="container mx-auto px-4 sm:px-0">
+    <div class="container mx-auto px-4 sm:px-0 pt-8">
       <UButton
         type="button"
         variant="outline"
@@ -15,7 +15,7 @@
         }"
         @click="router.go(-1)"
       />
-      <div class="max-w-[512px] mx-auto">
+      <div class="max-w-[512px] mx-auto mt-6">
         <UTabs
           v-model="tab.value"
           :items="tab.items"
