@@ -1,7 +1,7 @@
 <template>
   <div class="experience bg-white p-8 rounded-xl">
     <h2 id="text-expr" class="font-bold text-2xl sm:text-3xl break-words mb-4">
-      &nbsp;
+      Experience
     </h2>
     <UDivider class="mb-6" />
     <div
@@ -37,9 +37,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 const items = [
   {
     company: 'Elemes Group',
@@ -97,38 +94,6 @@ practices`,
     ],
   },
 ]
-
-function animateText(id: string, value: string) {
-  const container = document.getElementById(`text-${id}`)
-  container!.innerHTML = ''
-  const text = value.toUpperCase()
-  const letters = text.split('')
-  letters.forEach((letter) => {
-    const span = document.createElement('span')
-    span.textContent = letter
-    span.classList.add('opacity-0')
-    container!.appendChild(span)
-  })
-
-  ScrollTrigger.create({
-    trigger: container,
-    start: 'top 80%',
-    end: 'bottom 20%',
-    onEnter: () =>
-      gsap.to(container!.children, {
-        opacity: 1,
-        duration: 0.2,
-        stagger: 0.1,
-        ease: 'none',
-      }),
-    toggleActions: 'play none none reverse',
-    once: true,
-  })
-}
-
-onMounted(() => {
-  animateText('expr', 'Experience')
-})
 </script>
 <style lang="css" scoped>
 .experience {
