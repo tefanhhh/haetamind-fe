@@ -79,7 +79,7 @@ export default defineNuxtConfig({
         {
           key: 'og:image',
           property: 'og:image',
-          content: '/images/Tefan_Logo_wt2qve.png',
+          content: '/images/logo.png',
         },
         {
           key: 'og:image:width',
@@ -100,7 +100,7 @@ export default defineNuxtConfig({
         {
           key: 'twitter:image',
           name: 'twitter:image',
-          content: '/images/Tefan_Logo_wt2qve.png',
+          content: '/images/logo.png',
         },
         {
           key: 'twitter:image:width',
@@ -227,7 +227,7 @@ export default defineNuxtConfig({
     identity: definePerson({
       name: 'Tefan Haetami',
       givenName: 'Tefan',
-      image: '/images/Tefan_Logo_wt2qve.png',
+      image: '/images/logo.png',
       description:
         'Experienced Software Engineer and Web Developer specializing in JavaScript, TypeScript, Vue, Nuxt, NestJS, and full-stack development. Passionate about building fast, accessible, and scalable digital experiences.',
       jobTitle:

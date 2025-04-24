@@ -21,7 +21,7 @@ const props = withDefaults(
 )
 
 const src = {
-  compact: '/images/Tefan_Logo_wt2qve.png',
-  soft: '/images/Tefan_Logo_Soft_hcve2e.png',
+  compact: '/images/logo.png',
+  soft: '/images/logo-soft.png',
 }
 </script>

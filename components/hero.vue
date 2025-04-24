@@ -19,15 +19,15 @@
         class="circle opacity-0 h-24 sm:h-60 lg:h-80 w-24 sm:w-60 lg:w-80 rounded-full bg-black relative overflow-hidden"
       >
         <div
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[54px] sm:h-[124px] lg:w-[164px] w-[54px] sm:w-[124px] lg:h-[164px]"
+          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <NuxtImg
             format="webp"
-            src="/images/Tefan_Logo_Soft_hcve2e.png"
+            src="/images/logo-soft.png"
             alt="Haetamind Logo Soft"
             loading="lazy"
-            width="164"
-            height="164"
+            width="184"
+            height="184"
             class="animate-spin-slow-md"
           />
         </div>
@@ -36,7 +36,7 @@
         >
           <NuxtImg
             format="webp"
-            src="/images/tefan-logo-frame.png"
+            src="/images/logo-frame.png"
             alt="Haetamind Frame"
             loading="lazy"
             width="324"
