@@ -72,6 +72,22 @@ const years = dayjs().diff('2018-01-01', 'year')
 
 const items = [
   {
+    title: 'DPMinim',
+    platform: ['Dashboard', 'Web User'],
+    url: 'https://dpminim.id/',
+    description: 'Sell used cars with the lowest down payment in Indonesia.',
+    role: 'Frontend Developer',
+    tech: ['TypeScript', 'Next', 'React', 'Redux', 'Tailwind CSS', 'Hero UI'],
+  },
+  {
+    title: 'Mandiri Utama Finance (MUF)',
+    platform: ['Dashboard', 'Web User', 'Landing'],
+    url: 'https://mufapp.com/',
+    description: 'The vehicle dealer-customer buying and selling application',
+    role: 'Frontend Developer',
+    tech: ['TypeScript', 'Nuxt', 'Vue', 'Pinia', 'Tailwind CSS', 'Nuxt UI'],
+  },
+  {
     title: 'BTPN Syariah',
     platform: ['Landing', 'CMS'],
     url: 'https://btpnsyariah.com/',
