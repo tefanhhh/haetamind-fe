@@ -4,7 +4,7 @@
       id="text-tools-and-tech"
       class="font-bold text-2xl sm:text-3xl break-words mb-4"
     >
-      &nbsp;
+      Tools and Technologies
     </h2>
     <UDivider class="mb-6" />
     <div>
@@ -29,9 +29,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 const { generateSeo } = useSeo()
 
 useSeoMeta(
@@ -49,38 +46,6 @@ const items = [
     path: '/tools/hasher',
   },
 ]
-
-function animateText(id: string, value: string) {
-  const container = document.getElementById(`text-${id}`)
-  container!.innerHTML = ''
-  const text = value.toUpperCase()
-  const letters = text.split('')
-  letters.forEach((letter) => {
-    const span = document.createElement('span')
-    span.textContent = letter
-    span.classList.add('opacity-0')
-    container!.appendChild(span)
-  })
-
-  ScrollTrigger.create({
-    trigger: container,
-    start: 'top 80%',
-    end: 'bottom 20%',
-    onEnter: () =>
-      gsap.to(container!.children, {
-        opacity: 1,
-        duration: 0.2,
-        stagger: 0.1,
-        ease: 'none',
-      }),
-    toggleActions: 'play none none reverse',
-    once: true,
-  })
-}
-
-onMounted(() => {
-  animateText('tools-and-tech', 'Tools and Tech')
-})
 </script>
 <style lang="css" scoped>
 .tools {
