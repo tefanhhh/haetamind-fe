@@ -12,8 +12,8 @@
         I have been coding for over {{ years }}+ years, working on projects of
         all sizes, from small-scale applications to large-scale systems. I have
         experience in building web applications and APIs, using a variety of
-        technologies such as JavaScript, TypeScript, Node.js, Angular, Vue, and
-        more. Here are some of my current and past works:
+        technologies such as JavaScript, TypeScript, Node.js, Angular, Vue,
+        React, and more. Here are some of my current and past works:
       </p>
       <div class="mb-6"></div>
       <ul>
