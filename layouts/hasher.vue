@@ -1,10 +1,21 @@
 <template>
   <div>
     <Navbar />
-    <div class="container mx-auto px-4 sm:px-0">
-      <Hero />
-      <div class="mb-8"></div>
-      <div class="max-w-[512px] mx-auto">
+    <div class="container mx-auto px-4 sm:px-0 pt-8">
+      <UButton
+        type="button"
+        variant="outline"
+        label="Go Back"
+        icon="i-heroicons-arrow-left"
+        :ui="{
+          rounded: 'rounded-full',
+          padding: {
+            sm: 'px-4 py-1.5',
+          },
+        }"
+        @click="router.go(-1)"
+      />
+      <div class="max-w-[512px] mx-auto mt-6">
         <UTabs
           v-model="tab.value"
           :items="tab.items"
@@ -45,16 +56,16 @@ const tab = reactive({
   prevValue: 0,
   items: [
     {
-      label: 'Summary',
-      value: '/',
+      label: 'Bcrypt',
+      value: '/tools/hasher',
     },
     {
-      label: 'Works',
-      value: '/works',
+      label: 'Scrypt',
+      value: '/tools/hasher/scrypt',
     },
     {
-      label: 'Tools',
-      value: '/tools',
+      label: 'Argon2',
+      value: '/tools/hasher/argon2',
     },
   ],
 })

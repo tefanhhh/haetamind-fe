@@ -277,7 +277,11 @@ export default defineNuxtConfig({
     sitemaps: {
       general: {
         includeAppSources: true,
-        include: ['/', '/works'],
+        include: ['/', '/works', '/tools'],
+        defaults: { priority: 1 },
+      },
+      tools: {
+        include: ['/tools/**'],
         defaults: { priority: 1 },
       },
     },
