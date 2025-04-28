@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@iconify-json/simple-icons": "^1.2.23",
+    "@nuxt/eslint": "^1.0.0",
     "@nuxt/image": "1.9.0",
     "@nuxt/ui": "2.21.0",
     "@nuxtjs/robots": "^5.2.2",
@@ -37,7 +38,6 @@
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "@nuxt/eslint": "^1.0.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-vue": "^9.32.0",
