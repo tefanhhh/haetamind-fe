@@ -52,10 +52,6 @@ const tab = reactive({
       label: 'Works',
       value: '/works',
     },
-    {
-      label: 'Tools',
-      value: '/tools',
-    },
   ],
 })
 

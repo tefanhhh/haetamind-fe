@@ -20,14 +20,16 @@
     "@nuxtjs/seo": "^2.1.1",
     "@nuxtjs/sitemap": "^7.2.4",
     "@pinia/nuxt": "0.9.0",
-    "bcrypt": "^5.1.1",
     "dayjs": "^1.11.13",
     "gsap": "^3.12.7",
     "nuxt": "^3.15.4",
+    "nuxt-lodash": "^2.5.3",
     "nuxt-schema-org": "^4.1.1",
     "nuxt-seo-utils": "^6.0.8",
     "nuxt-site-config": "^3.0.6",
     "pinia": "^2.3.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-image-optimizer": "^1.1.8",
     "vue": "latest",
     "vue-router": "latest",
     "zod": "^3.24.2"
@@ -36,16 +38,12 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@nuxt/eslint": "^1.0.0",
-    "@types/bcrypt": "^5.0.2",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-vue": "^9.32.0",
     "globals": "^15.14.0",
-    "nuxt-lodash": "^2.5.3",
     "prettier": "^3.4.2",
-    "typescript-eslint": "^8.23.0",
-    "vite-plugin-compression": "^0.5.1",
-    "vite-plugin-image-optimizer": "^1.1.8"
+    "typescript-eslint": "^8.23.0"
   },
   "overrides": {
     "vue": "latest"
