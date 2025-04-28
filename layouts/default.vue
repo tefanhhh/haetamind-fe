@@ -68,7 +68,7 @@ const onTabChange = useDebounce((val: number) => {
     path: tab.items[val].value,
   })
   tab.prevValue = val
-}, 300)
+}, 100)
 
 if (path) {
   const index = tab.items.findIndex((item) => item.value === path)
