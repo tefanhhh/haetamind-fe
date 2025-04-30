@@ -10,10 +10,10 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       link: [
-        {
-          href: process.env.NUXT_PUBLIC_BASE_URL,
-          rel: 'canonical',
-        },
+        // {
+        //   href: process.env.NUXT_PUBLIC_BASE_URL,
+        //   rel: 'canonical',
+        // },
         {
           rel: 'icon',
           type: 'image/png',
